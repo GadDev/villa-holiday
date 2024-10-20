@@ -3,8 +3,8 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-  basePath: isProd ? 'https://gaddev.github.io/villa-holiday/' : '',
-  assetPrefix: isProd ? 'https://gaddev.github.io/villa-holiday/' : '',
+  basePath: isProd ? 'https://gaddev.github.io/villa-holiday' : '',
+  assetPrefix: isProd ? 'https://gaddev.github.io/villa-holiday' : '',
   output: 'export',
   images: {
     loader: 'akamai',
