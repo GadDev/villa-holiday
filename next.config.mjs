@@ -7,6 +7,7 @@ const nextConfig = {
   assetPrefix: isProd ? 'https://gaddev.github.io/villa-holiday/' : '',
   output: 'export',
   images: {
+    loader: 'akamai',
     path: '/',
   },
   webpack(config) {
