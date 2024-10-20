@@ -4,25 +4,30 @@ import Content from '../components/content'
 import Card from '../components/card'
 import Button from '../components/button'
 
+const basePath =
+  process.env.NODE_ENV === 'production'
+    ? 'https://gaddev.github.io/villa-holiday'
+    : ''
+
 const CTAs = [
   {
     id: 'villa_one',
-    imageSrc: '/img-a.png',
+    imageSrc: `${basePath}/img-a.png`,
     label: 'Villas with Pools',
   },
   {
     id: 'villa_two',
-    imageSrc: '/img-b.png',
+    imageSrc: `${basePath}/img-b.png`,
     label: 'Romantic Villas',
   },
   {
     id: 'villa_three',
-    imageSrc: '/img-c.png',
+    imageSrc: `${basePath}/img-c.png`,
     label: 'Beach Villas',
   },
   {
     id: 'villa_four',
-    imageSrc: '/img-d.png',
+    imageSrc: `${basePath}/img-d.png`,
     label: 'Sustainable',
   },
 ]
