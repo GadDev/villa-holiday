@@ -3,8 +3,8 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-  basePath: isProd ? 'https://github.com/GadDev/villa-holiday' : '',
-  assetPrefix: isProd ? 'https://github.com/GadDev/villa-holiday' : '',
+  basePath: isProd ? 'https://gaddev.github.io/villa-holiday/' : '',
+  assetPrefix: isProd ? 'https://gaddev.github.io/villa-holiday/' : '',
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
