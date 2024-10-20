@@ -1,9 +1,28 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
   "extends": [
     "next",
     "next/core-web-vitals",
     "plugin:testing-library/react",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
     "plugin:jest-dom/recommended",
     "prettier"
-  ]
+  ],
+  "plugins": ["react", "jsx-a11y"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
